@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import Content from "./components/Content";
+import Footer from "./components/Footer";
+import List from "./components/List";
+import GlobalStyles from "./styles/GlobalStyles";
+import { TEXTS } from "./data/translation";
+import { users } from "./data/users";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+	return (
+		<>
+			<GlobalStyles />
+			<Header title={TEXTS.TITLE} />
+			<Content>
+				<List list={users} />
+			</Content>
+			<Footer text1={TEXTS.FOOTER.TEXT1} text2={TEXTS.FOOTER.TEXT2} />
+		</>
+	);
 }
 
 export default App;
