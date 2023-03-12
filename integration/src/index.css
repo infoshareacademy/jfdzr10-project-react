@@ -1,0 +1,35 @@
+:root {
+	--colors-primary: hsl(180, 29%, 50%);
+	--colors-neutral-bg: hsl(180, 52%, 96%);
+	--colors-neutral-grayishCyan-lt: hsl(180, 31%, 95%);
+	--colors-neutral-grayishCyan-d: hsl(180, 8%, 52%);
+	--colors-neutral-grayishCyan-vd: hsl(180, 14%, 20%);
+	--fs-base: 1.5rem;
+	--fw-regular: 500;
+	--fw-bold: 700;
+}
+
+html {
+	box-sizing: border-box;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-size: 62.5%;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: "League Spartan", sans-serif;
+	font-size: var(--fs-base);
+	color: var(--colors-primary);
+	font-weight: var(--fw-bold);
+	display: flex;
+	justify-content: center;
+	padding: 6rem 0;
+}
