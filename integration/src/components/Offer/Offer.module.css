@@ -1,0 +1,13 @@
+.offer {
+  display: flex;
+  padding: 2rem;
+  gap: 20px;
+  align-items: center;
+  width: 100%;
+}
+.offer--deatils {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
