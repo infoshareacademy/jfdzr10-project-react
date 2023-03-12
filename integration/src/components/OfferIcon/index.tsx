@@ -1,8 +1,9 @@
 import style from "./OfferIcon.module.css"
+import {OfferIconProps} from "@/types"
 
-function OfferIcon({logo, alt}) {
+const OfferIcon: React.FunctionComponent<OfferIconProps> = ({logo, alt}) => {
   
-  function getImgPath(path) {
+  function getImgPath(path: string) {
     return `./images${path.split('./images')[1]}`
   }
 

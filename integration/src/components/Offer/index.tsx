@@ -5,7 +5,10 @@ import OfferTitle from "@/components/OfferTitle"
 import OfferDetails from "@/components/OfferDetails"
 import OfferTools from "@/components/OfferTools"
 
-function Offer({offer}) {
+import {OfferProps} from "@/types"
+
+
+const Offer: React.FunctionComponent<OfferProps> = ({offer}) => {
   
 
   return (
