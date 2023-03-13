@@ -1,11 +1,7 @@
 .label {
 	color: white;
 	background-color: var(--colors-primary);
-	height: 2rem;
-	width: 5rem;
+	padding: 0.6rem 0.8rem;
 	border-radius: 50px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
 	font-size: 1.2rem;
 }

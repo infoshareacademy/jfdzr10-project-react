@@ -1,4 +1,4 @@
-import { ListItem } from "./ListItem";
+import { ListItem } from "./components/ListItem";
 import { getData } from "./api/getData";
 import { useState, useEffect } from "react";
 
@@ -22,6 +22,12 @@ function App() {
 							key={crypto.randomUUID()}
 							company={person?.company}
 							isNew={person?.new}
+							logo={person?.logo}
+							title={person?.position}
+							postedAt={person?.postedAt}
+							contract={person?.contract}
+							location={person?.location}
+							tags={[...person?.languages].concat([...person?.tools])}
 						/>
 					);
 				})}
