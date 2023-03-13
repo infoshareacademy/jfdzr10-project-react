@@ -1,0 +1,15 @@
+.box{
+    margin: 20px;
+    padding: 20px;
+    display: flex;
+    background-color: lightgrey;
+    box-shadow: 5px;
+    border-radius: 5px;
+    border: 1px solid lightgrey;
+}
+
+.box2{
+    display: flex;
+    flex-direction: column;
+    
+}
