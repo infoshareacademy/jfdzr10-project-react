@@ -1,0 +1,19 @@
+.post {
+  margin: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  background-color: lightgrey;
+  box-shadow: 5px;
+  border-radius: 5px;
+  border: 1px solid lightgrey;
+}
+
+.post--title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: black;
+}
+.post--body {
+  color: #444;
+}
