@@ -1,0 +1,7 @@
+.label {
+	color: white;
+	background-color: var(--colors-primary);
+	padding: 0.6rem 0.8rem;
+	border-radius: 50px;
+	font-size: 1.2rem;
+}
