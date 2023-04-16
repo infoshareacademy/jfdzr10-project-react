@@ -1,7 +1,12 @@
-import { API_URL } from '../../const';
-import { AddPostProps } from './AddPost.types';
+import { API_URL } from '../../const'
+import { AddPostProps } from './AddPost.types'
 
-export const useAddPost = ({ title, body, resetTitle, resetBody }: AddPostProps) => {
+export const useAddPost = ({
+  title,
+  body,
+  resetTitle,
+  resetBody,
+}: AddPostProps) => {
   const fetchData = () => {
     fetch(API_URL, {
       method: 'post',
@@ -9,10 +14,10 @@ export const useAddPost = ({ title, body, resetTitle, resetBody }: AddPostProps)
         title,
         body,
       }),
-    }).then((res) => {
-      resetTitle();
-      resetBody();
-    });
-  };
-  return { fetchData };
-};
+    }).then(res => {
+      resetTitle()
+      resetBody()
+    })
+  }
+  return { fetchData }
+}

@@ -1,32 +1,32 @@
-import { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
-import { Header } from '../components/Header';
-import { API_URL } from '../const';
-import { PostsResponse } from './Posts.types';
+import { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
+import { Header } from '../components/Header'
+import { API_URL } from '../const'
+import { PostsResponse } from './Posts.types'
 
 export const Posts = () => {
-  const [posts, setPosts] = useState<PostsResponse>([]);
+  const [posts, setPosts] = useState<PostsResponse>([])
 
   const fetchData = () => {
     return fetch(API_URL)
-      .then((response) => response.json())
-      .then((response) => setPosts(response));
-  };
+      .then(response => response.json())
+      .then(response => setPosts(response))
+  }
 
   useEffect(() => {
-    fetchData();
-  }, []);
+    fetchData()
+  }, [])
 
   const renderPosts = () =>
-    posts.map((post) => {
-      const postUrl = `/post/${post.id}`;
+    posts.map(post => {
+      const postUrl = `/post/${post.id}`
 
       return (
         <div key={post.id}>
           <Link to={postUrl}>{post.title}</Link>
         </div>
-      );
-    });
+      )
+    })
 
   return (
     <div>
@@ -34,5 +34,5 @@ export const Posts = () => {
       <h1>Lista Postów:</h1>
       {renderPosts()}
     </div>
-  );
-};
+  )
+}
